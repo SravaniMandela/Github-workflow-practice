@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checking out code
-      uses: actions/checkout@java
+      uses: actions/checkout@v2
     - name: Build Docker image
       run: docker build ./docker_image_java/ --file ./docker_image_java/Dockerfile --tag javaimage:latest
 
